@@ -1,7 +1,12 @@
 import { FC } from "react";
+import { AllCats } from "./pages";
 
 const App: FC = () => {
-  return <></>;
+  return (
+    <div className="container">
+      <AllCats />
+    </div>
+  );
 };
 
 export default App;

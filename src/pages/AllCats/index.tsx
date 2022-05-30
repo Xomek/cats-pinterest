@@ -1,7 +1,21 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
+import { CatsList } from "../../components";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { getCats } from "../../store/thunks/catsThunks";
 
 const AllCats: FC = () => {
-  return <div></div>;
+  const { cats } = useAppSelector((state) => state.cats);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(getCats(24));
+  }, []);
+
+  return (
+    <div>
+      <CatsList cats={cats} />
+    </div>
+  );
 };
 
 export default AllCats;
