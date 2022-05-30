@@ -29,7 +29,7 @@ const catsSlice = createSlice({
       state.isLoading = true;
     },
     [getCats.fulfilled.type]: (state, action: PayloadAction<ICat[]>) => {
-      state.cats = action.payload;
+      state.cats = [...state.cats, ...action.payload];
       state.isLoading = false;
     },
     [getCats.rejected.type]: (state, action: PayloadAction<string>) => {

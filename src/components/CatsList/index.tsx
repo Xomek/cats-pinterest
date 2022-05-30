@@ -13,8 +13,8 @@ const CatsList: FC<ICatsListProps> = ({ className, cats, ...props }) => {
 
   return (
     <div className={CatsListStyles} {...props}>
-      {cats.map((cat) => (
-        <CatsListItem cat={cat} key={cat.id} />
+      {cats.map((cat, index) => (
+        <CatsListItem cat={cat} key={`${cat.id}_${cat.url}_${index}`} />
       ))}
     </div>
   );
