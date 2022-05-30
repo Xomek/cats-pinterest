@@ -1,4 +1,5 @@
+import AppRouter from "./AppRouter";
 import Header from "./Header";
 import CatsList from "./CatsList";
 
-export { Header, CatsList };
+export { AppRouter, Header, CatsList };

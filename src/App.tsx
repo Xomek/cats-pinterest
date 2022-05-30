@@ -1,13 +1,12 @@
 import { FC } from "react";
-import { Header } from "./components";
-import { AllCats } from "./pages";
+import { AppRouter, Header } from "./components";
 
 const App: FC = () => {
   return (
     <>
       <Header />
       <div className="container">
-        <AllCats />
+        <AppRouter />
       </div>
     </>
   );
