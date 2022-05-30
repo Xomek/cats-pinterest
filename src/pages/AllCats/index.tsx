@@ -8,7 +8,7 @@ const AllCats: FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(getCats(24));
+    dispatch(getCats(25));
   }, []);
 
   return (
