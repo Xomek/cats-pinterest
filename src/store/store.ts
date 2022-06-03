@@ -1,7 +1,8 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import catsReducer from "./slices/catsSlice";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: { cats: catsReducer },
 });
 
 export type AppDispatch = typeof store.dispatch;
