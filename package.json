@@ -2,7 +2,7 @@
   "name": "cats-pinterest",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://xomek.github.io/cats-pinterest",
+  "homepage": "https://xomek.github.io/cats-pinterest/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@types/node": "^20.8.3",

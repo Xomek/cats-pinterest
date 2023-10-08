@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import { MainLayout } from "../layouts";
 import { AllCats, LikedCats } from "../pages";
 import { ROUTES } from "./routes";
@@ -16,6 +16,8 @@ const router = createBrowserRouter([
         path: ROUTES.LIKED,
         element: <LikedCats />,
       },
+
+      { path: "*", element: <Navigate to={ROUTES.ROOT} /> },
     ],
   },
 ]);
