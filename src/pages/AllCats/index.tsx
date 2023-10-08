@@ -10,12 +10,12 @@ const AllCats: FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (!cats.length) dispatch(getCats(25));
+    if (!cats.length) dispatch(getCats(10));
   }, []);
 
   useEffect(() => {
     if (fetching) {
-      dispatch(getCats(25));
+      dispatch(getCats(10));
       setFetching(false);
     }
   }, [fetching]);
