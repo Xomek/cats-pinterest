@@ -1,8 +1,8 @@
 {
-  "name": "app",
+  "name": "cats-pinterest",
   "version": "2.0.0",
   "private": true,
-  "homepage": "https://xomek.github.io/cats-pinterest/",
+  "homepage": "https://xomek.github.io/cats-pinterest",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.2",
     "@types/node": "^17.0.36",
